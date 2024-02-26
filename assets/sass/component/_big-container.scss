@@ -1,0 +1,81 @@
+.big-container {
+  display: flex;
+  margin: 30px 0;
+  width: 100%;
+
+  &:first-of-type {
+    margin: 0 0 30px;
+  }
+
+  @include mobile() {
+    flex-direction: column;
+    margin: 40px 0;
+  }
+
+  &__image {
+    max-width: 600px;
+    width: 50%;
+
+    @include mobile() {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__text-box {
+    margin: 50px 0 0 60px;
+    max-width: 540px;
+    width: calc(50% - 60px);
+
+    @include mobile() {
+      margin: 40px auto 0;
+      text-align: center;
+      width: calc(100% - 40px);
+    }
+
+    &__name {
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+
+      @include mobile() {
+        font-size: 24px;
+      }
+    }
+
+    &__description {
+      font-size: 15px;
+      margin-top: 14px;
+    }
+
+    &__price {
+      color: $color_main;
+      font-size: 16px;
+      margin-top: 20px;
+
+      @include mobile() {
+        margin-top: 15px;
+      }
+    }
+
+    &__box {
+      background-color: #fdfdfd;
+      font-size: 14px;
+      margin-top: 50px;
+      line-height: 1.3;
+      padding: 30px 30px;
+      width: calc(100% - 60px);
+      max-width: 400px;
+
+      @include mobile() {
+        margin: 30px auto 0;
+        padding: 20px 30px;
+        width: calc(100% - 100px);
+      }
+    }
+  }
+}

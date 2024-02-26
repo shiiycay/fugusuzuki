@@ -1,0 +1,22 @@
+// foundation
+@import "foundation/reset";
+@import "foundation/breakpoint";
+@import "foundation/font";
+@import "foundation/color";
+
+// common style
+@import "style";
+
+// component
+@import "component/key-visual";
+@import "component/section";
+@import "component/global-nav";
+@import "component/news-block";
+@import "component/main-block";
+@import "component/row";
+@import "component/footer";
+
+@import "component/page-text";
+@import "component/page-top";
+@import "component/big-container";
+@import "component/mid-container";

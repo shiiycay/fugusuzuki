@@ -1,0 +1,13 @@
+.mid-container {
+  margin: 30px 0;
+  width: 100%;
+
+  &__image {
+
+    width: 300px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

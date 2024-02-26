@@ -1,0 +1,65 @@
+.page-heading {
+  font-size: 22px;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin: 0 0 80px;
+  max-width: calc(100vw - 20px);
+  position: relative;
+
+  @include mobile() {
+    margin: 0 0 50px;
+  }
+
+  &::after {
+    background-color: #000;
+    content: '';
+    height: 1px;
+    left: -45px;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 26px;
+  }
+
+  &::before {
+    background-color: #000;
+    content: '';
+    height: 1px;
+    right: -45px;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 26px;
+  }
+}
+
+.page-notes {
+  border: solid 1px #000;
+  margin-top: 40px;
+  padding: 30px 0;
+  font-size: 18px;
+  text-align: center;
+  max-width: 1200px;
+  width: calc(100% - 40px);
+
+  @include mobile() {
+    border: solid 2px #000;
+    border-left: none;
+    border-right: none;
+    margin-top: 20px;
+    padding: 25px 20px;
+    width: calc(100vw - 40px);
+  }
+
+  &__small {
+    font-size: 13px;
+    font-weight: normal;
+    margin: 10px 0 0;
+  }
+}
+
+.tax-excluded {
+  font-size: 12px;
+}

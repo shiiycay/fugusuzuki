@@ -1,0 +1,46 @@
+.g-nav {
+  background-color: rgba(256,256,256,0.9);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.05);
+  align-items: center;
+  display: flex;
+  height: 60px;
+  justify-content: flex-end;
+  left: 0;
+  padding: 0 60px 0 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  transition-duration: 0.5s;
+  width: calc(100vw - 60px);
+  z-index: 20;
+
+  @include mobile() {
+    
+  }
+
+  &.bg-transparent {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &__item {
+    align-items: center;
+    height: 100%;
+    display: flex;
+    margin: 0 25px;
+
+    &__jp {
+      color: #000;
+      font-weight: 500;
+      line-height: 1.8;
+      letter-spacing: 0.05rem;
+      font-size: 13px;
+      transition-duration: 0.5s;
+
+      &.bg-transparent {
+        color: #fff;
+      }
+    }
+  }
+}

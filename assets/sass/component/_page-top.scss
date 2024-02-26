@@ -1,0 +1,33 @@
+.page-top {
+  align-items: center;
+  background-image: url(../image/menu-top--pc.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  margin-top: 60px;
+  height: 400px;
+  justify-content: center;
+  width: 100vw;
+
+  @include mobile() {
+    height: 40vh;
+  }
+
+  &__headline {
+    font-size: 26px;
+    letter-spacing: 0.2rem;
+    background-color: #fff;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    width: 200px;
+
+    @include mobile() {
+      height: 130px;
+      font-size: 18px;
+      line-height: 130px;
+      width: 130px;
+    }
+  }
+}
